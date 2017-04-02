@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+alias ls='ls -GFh'
+alias rm='rm -i'
+alias mv='mv -i'
+
+alias cls='clear'
+
+alias v='view'
