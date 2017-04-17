@@ -13,6 +13,10 @@ export VISUAL="vim"
 # Set-up some aliases
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
+
+# Set-up some functions 
+[[ -f "$HOME/.functions" ]] && source "$HOME/.functions"
+
 # Configure Ruby Version Manager
 if [ -d "$HOME/.rvm" ]; then
     export PATH="$HOME/.rvm/bin:$PATH" 
