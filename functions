@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Serve the current directory through HTTP
+function serve {
+    port="${1:-5000}"
+    ruby -run -e httpd . -p $port
+}
