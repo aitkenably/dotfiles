@@ -17,6 +17,9 @@ export VISUAL="vim"
 # Set-up some functions 
 [[ -f "$HOME/.functions" ]] && source "$HOME/.functions"
 
+# Set-up Git autocomplete
+[[ -f "$HOME/.git-completion.bash" ]] && source "$HOME/.git-completion.bash"
+
 # Configure Ruby Version Manager
 if [ -d "$HOME/.rvm" ]; then
     export PATH="$HOME/.rvm/bin:$PATH" 
