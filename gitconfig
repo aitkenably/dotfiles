@@ -1,0 +1,5 @@
+[user]
+	name = Don Aitken
+	email = don.aitken@gmail.com
+[core]
+	autocrlf = input
