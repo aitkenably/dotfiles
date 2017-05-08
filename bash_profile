@@ -30,6 +30,9 @@ export VISUAL="vim"
 # Set prompt
 export PS1='\n\[\033[35m\]\u@\h \[\033[32m\]\w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[37m\]\n(\!) \$ '
 
+# Set bashmarks
+[[ -f "$HOME/.dotfiles/bashmarks" ]] && source "$HOME/.dotfiles/bashmarks"
+
 # Configure Ruby Version Manager
 if [ -d "$HOME/.rvm" ]; then
     export PATH="$HOME/.rvm/bin:$PATH" 
