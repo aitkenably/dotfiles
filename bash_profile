@@ -14,9 +14,11 @@ export PATH
 export EDITOR="vim"
 export VISUAL="vim"
 
+# Set-up machine-specific variables if they exist
+[[ -f "$HOME/.machine" ]] && source "$HOME/.machine"
+
 # Set-up some aliases
 [[ -f "$HOME/.dotfiles/aliases" ]] && source "$HOME/.dotfiles/aliases"
-
 
 # Set-up some functions 
 [[ -f "$HOME/.dotfiles/functions" ]] && source "$HOME/.dotfiles/functions"
@@ -27,8 +29,12 @@ export VISUAL="vim"
 # Set-up Git prompt
 [[ -f "$HOME/.dotfiles/git-prompt.sh" ]] && source "$HOME/.dotfiles/git-prompt.sh"
 
+# NICKNAME is used in the prompt. It defaults to hostname
+# but can be override on individual machines 
+export NICKNAME="${NICKNAME:-`hostname`}"
+
 # Set prompt
-export PS1='\n\[\033[35m\]\u@\h \[\033[32m\]\w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[37m\]\n(\!) \$ '
+export PS1='\n\[\033[35m\]\u@$NICKNAME \[\033[32m\]\w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[37m\]\n(\!) \$ '
 
 # Set bashmarks
 [[ -f "$HOME/.dotfiles/bashmarks" ]] && source "$HOME/.dotfiles/bashmarks"
