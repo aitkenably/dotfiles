@@ -37,4 +37,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 " preserve tabs in make files
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
-
+" scene settings 
+"autocmd FileType scene set wrap linebreak nolist nonumber
+autocmd FileType scene set nonumber tw=79
