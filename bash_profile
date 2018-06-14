@@ -9,6 +9,11 @@ if [ -d "$HOME/bin" ]; then
     PATH="$PATH:$HOME/bin"
 fi
 
+# Add caligula bin folder if it exists
+if [ -d "/opt/caligula/bin" ]; then
+    PATH="$PATH:/opt/caligula/bin"
+fi
+
 export PATH
 
 export EDITOR="vim"
