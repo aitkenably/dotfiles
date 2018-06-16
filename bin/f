@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Folds a file to 80 columns in place"
+    echo "usage: f <file>"
+    exit 1
+fi
+
+TMP_FILE=."$1".folded
+
+
+fold -w 80 -s "$1" > "$TMP_FILE"
+rm "$1"
+mv "$TMP_FILE" "$1" 
