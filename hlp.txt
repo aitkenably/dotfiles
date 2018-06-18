@@ -1,0 +1,19 @@
+
+    Custom Aliases and Commands
+
+    Text Manipulation
+
+    f           folds a file to 80 columns in place
+    v           alias for 'view'
+    
+    Git Commands
+
+    gh          alias for 'git push origin master'
+    gs          alias for 'git status'
+    gu          alias for 'git reset HEAD --'
+    gc          alias for 'git commit'
+
+    Misc Commands
+
+    hlp         prints this cheatsheet
+

@@ -7,3 +7,8 @@ alias mv='mv -i'
 alias cls='clear'
 
 alias v='view'
+
+alias gh='git push origin master'
+alias gs='git status'
+alias gu='git reset HEAD --'
+alias gc='git commit'
