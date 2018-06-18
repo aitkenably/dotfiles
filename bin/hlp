@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo ""
+echo "  Custom aliases and commands"
+echo ""
+
+echo "  f           folds a file to 80 columns in place"
+echo "  hlp         prints this cheatsheet" 
+echo "  v           alias for view"
+
+echo "" 
