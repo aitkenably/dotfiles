@@ -7,6 +7,7 @@ alias mv='mv -i'
 alias cls='clear'
 
 alias v='view'
+alias cs='cheatsheets'
 
 alias gh='git push origin master'
 alias gs='git status'

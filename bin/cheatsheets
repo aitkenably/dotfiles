@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+
+from sys import argv, exit
+from pathlib import Path
+from os.path import join
+from subprocess import Popen, PIPE
+
+cheatsheets = ["aliases"]
+
+if len(argv) != 2 or argv[1] in ["--help", "-h", "-help"]:
+    print("Usage: cheatsheet <cheatsheet name>")
+    print("")
+    print("Available cheatsheets:")
+    for cheatsheet in cheatsheets:
+        print(f"  {cheatsheet}")
+    exit(1)
+
+cheatsheet_name = argv[1]
+
+if cheatsheet_name not in cheatsheets:
+    print(f"Unknown cheatsheet '{cheatsheet_name}'")
+    print("Run --help for more information")
+    exit(1)
+
+cheatsheet_file = join(Path.home(), ".dotfiles/cheatsheets", cheatsheet_name)
+cheatsheet_content = open(cheatsheet_file, 'r').read()
+
+# ANSI color codes
+GREEN = "\033[0;32m"
+CYAN = "\033[0;36m"
+ 
+# Reset color
+RC = "\033[0m"
+
+tag_code_map = {
+    "<c>"  : CYAN,
+    "</c>" : RC,
+    
+    "<g>"  : GREEN,
+    "</g>" : RC
+}
+
+for tag, code in tag_code_map.items():
+    cheatsheet_content = cheatsheet_content.replace(tag, code)
+
+p = Popen(['less', '-R'], stdin=PIPE)
+p.communicate(cheatsheet_content.encode())

@@ -1,0 +1,17 @@
+
+  <c>Custom Commands</c>
+
+    <g>Text Manipulation</g>
+
+     f             folds a file to 8 columns in place
+     v             alias for 'view'
+
+    <g>Git Commands</g>
+
+     gc            alias for 'git commit'
+     gh            alias for 'git push origin master'
+     gs            alias for 'git status'
+
+    <g>Misc Commands</g>
+
+     cs            alias for 'cheatsheets'
