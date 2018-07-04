@@ -34,6 +34,12 @@ set hlsearch  " highlight matches
 " clear search highlighting
 nnoremap <leader><space> :nohlsearch<CR> 
 
+" highlight the 80th column in near black 
+set tw=79
+hi ColorColumn ctermbg=236
+set colorcolumn=+1
+
+
 " preserve tabs in make files
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 

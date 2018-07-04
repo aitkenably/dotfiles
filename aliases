@@ -9,6 +9,7 @@ alias cls='clear'
 alias v='view'
 alias cs='cheatsheets'
 
+alias ga='git add'
 alias gh='git push origin master'
 alias gs='git status'
 alias gc='git commit'

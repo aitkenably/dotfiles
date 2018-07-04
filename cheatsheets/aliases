@@ -8,6 +8,7 @@
 
     <g>Git Commands</g>
 
+     ga            alias for 'git add'
      gc            alias for 'git commit'
      gh            alias for 'git push origin master'
      gs            alias for 'git status'
