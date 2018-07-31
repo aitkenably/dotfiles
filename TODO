@@ -1,2 +1,5 @@
 
-    - The 'f' doesn't work in the file is in another directory.
+    - The 'f' alias doesn't work in the file is in another directory.
+    - The backup command used in dotfiles_install should be made generic
+    - Backup command shouldn't use colon 
+    - TODOs should be scatter through dotfiles and made generic
