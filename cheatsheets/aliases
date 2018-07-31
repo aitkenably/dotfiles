@@ -6,6 +6,11 @@
      f             folds a file to 8 columns in place
      v             alias for 'view'
 
+    <g>Bookmark Commands</g>
+
+     bme            edit the .bookmarks file
+     bms            list all available bookmarks
+
     <g>Git Commands</g>
 
      ga            alias for 'git add'

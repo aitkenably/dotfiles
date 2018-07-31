@@ -6,10 +6,20 @@ alias mv='mv -i'
 
 alias cls='clear'
 
+# Cheatsheets
+
 alias v='view'
 alias cs='cheatsheets'
+
+# Git
 
 alias ga='git add'
 alias gh='git push origin master'
 alias gs='git status'
 alias gc='git commit'
+
+# Ruby
+
+alias rubies='rvm list'
+alias gemsets='rvm gemset list'
+alias gems='gem list'

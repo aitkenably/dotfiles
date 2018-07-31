@@ -31,6 +31,21 @@ export VISUAL="vim"
 # Set-up Git autocomplete
 [[ -f "$HOME/.dotfiles/git-completion.bash" ]] && source "$HOME/.dotfiles/git-completion.bash"
 
+# Set-up bookmarks (i.e. aliases to machine-specific directories)
+if [[ -f "$HOME/.bookmarks" ]]; then
+    source "$HOME/.bookmarks"
+
+    # Expects a variable $BOOKMARK_LIST to be 
+    # set-up in the .bookmarks file
+    bms() {
+        echo "$BOOKMARK_LIST"
+    }
+
+    bme() {
+        vi ~/.bookmarks
+    }
+fi
+
 # Set-up Git prompt
 [[ -f "$HOME/.dotfiles/git-prompt.sh" ]] && source "$HOME/.dotfiles/git-prompt.sh"
 
