@@ -4,6 +4,9 @@ alias ls='ls -GFh'
 alias rm='rm -i'
 alias mv='mv -i'
 
+# Mac OSX doesn't have tac
+alias tac='tail -rq'
+
 alias cls='clear'
 
 # Cheatsheets
