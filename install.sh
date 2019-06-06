@@ -28,7 +28,9 @@ function installFile {
     fi
 }
 
-installFile ~/.vimrc ~/.dotfiles/vimrc
 installFile ~/.zshrc ~/.dotfiles/zshrc
+installFile ~/.zshenv ~/.dotfiles/zshenv
+installFile ~/.vimrc ~/.dotfiles/vimrc
+
 
 #replace_file ~/.gitconfig ~/.dotfiles/gitconfig
