@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+
+cheatsheet = """
+ <c>Custom Commands</c>
+
+  <g>Text Manipulation</g>
+
+     f   folds a file to 80 columns in place
+     v   'view'
+
+  <g>Git</g>
+
+     ga  'git add'
+     gc  'git commit'
+     gh  'git push origin master'
+     gs  'git status'
+     gd  'git diff'
+"""
+
+# ANSI color codes
+GREEN = "\033[0;32m"
+CYAN = "\033[0;36m"
+ 
+# Reset color
+RC = "\033[0m"
+
+tag_code_map = {
+    "<c>"  : CYAN,
+    "</c>" : RC,
+    
+    "<g>"  : GREEN,
+    "</g>" : RC
+}
+
+for tag, code in tag_code_map.items():
+    cheatsheet = cheatsheet.replace(tag, code)
+
+print(cheatsheet)

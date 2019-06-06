@@ -19,14 +19,14 @@ alias ga='git add'
 alias gh='git push origin master'
 alias gs='git status'
 alias gc='git commit'
+alias gd='git diff'
 
 # TODO: rbenv
-# TODO: custom function 
-# TODO: color functions  
 # TODO: update (brew, gems)
 # TODO: man page in preview
-# TODO: Function to grep to TODOs in directory
-# TODO: Update prompt
+# TODO: function to grep to TODOs in directory
+# TODO: update prompt
+# TODO: handle vim directory
 
 #
 # Function: serve 
