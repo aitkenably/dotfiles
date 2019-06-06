@@ -9,6 +9,29 @@ alias ll='ls -lGFh'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cls='clear'
+alias v='view'
 
 # Print $PATH one entry per line
 alias mypath="echo $PATH | tr : '\n'"
+
+# Git
+alias ga='git add'
+alias gh='git push origin master'
+alias gs='git status'
+alias gc='git commit'
+
+# TODO: rbenv
+# TODO: custom function 
+# TODO: color functions  
+# TODO: update (brew, gems)
+# TODO: man page in preview
+# TODO: Function to grep to TODOs in directory
+# TODO: Update prompt
+
+#
+# Function: serve 
+# Serves the current directory through HTTP
+#function serve {
+#    port="${1:-5000}"
+#    ruby -run -e httpd . -p $port
+#}
