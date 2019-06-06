@@ -20,18 +20,3 @@ alias gh='git push origin master'
 alias gs='git status'
 alias gc='git commit'
 alias gd='git diff'
-
-# TODO: rbenv
-# TODO: update (brew, gems)
-# TODO: man page in preview
-# TODO: function to grep to TODOs in directory
-# TODO: update prompt
-# TODO: handle vim directory
-
-#
-# Function: serve 
-# Serves the current directory through HTTP
-#function serve {
-#    port="${1:-5000}"
-#    ruby -run -e httpd . -p $port
-#}
