@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'webrick'
+require 'optparse'
+
+options = {:port => 8080, :root => Dir.pwd}
+
+def serve(port:, root:)
+    server = WEBrick::HTTPServer.new :Port => port, :DocumentRoot => root
+    trap 'INT' do server.shutdown end
+    server.start
+end
+
+opt_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: serve [options]"
+  opts.separator "Serves a directory as a web site"
+  opts.separator ""
+
+  opts.on("-p", "--port=PORT", "Port number (Default: 8080)") do |p|
+    options[:port] = p
+  end
+
+  opts.on("-r", "--root=DIRECTORY", 
+            "Root directory (Default: working directory)") do |r|
+    options[:root] = File.expand_path(r) 
+  end
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+end
+
+begin
+    opt_parser.parse!(ARGV)
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+    puts $! 
+    puts "-h for usage"                                                                                                           
+    exit 1
+end
+
+serve(options)
