@@ -5,16 +5,20 @@ cheatsheet = """
 
   <g>Text Manipulation</g>
 
-     f   folds a file to 80 columns in place
-     v   'view'
+     f    folds a file to 80 columns in place
+     v    alias for 'view'
 
   <g>Git</g>
 
-     ga  'git add'
-     gc  'git commit'
-     gh  'git push origin master'
-     gs  'git status'
-     gd  'git diff'
+     ga    alias for 'git add'
+     gc    alias for 'git commit'
+     gh    alias for 'git push origin master'
+     gs    alias for 'git status'
+     gd    alias for 'git diff'
+
+  <g>Misc</g>
+
+     serve    serves directory as website
 """
 
 # ANSI color codes
