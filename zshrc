@@ -20,3 +20,6 @@ alias gh='git push origin master'
 alias gs='git status'
 alias gc='git commit'
 alias gd='git diff'
+
+# Setup rbenv
+eval "$(rbenv init -)"
