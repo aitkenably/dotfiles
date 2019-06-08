@@ -27,3 +27,7 @@ source ~/.dotfiles/mac
 
 # Setup rbenv
 eval "$(rbenv init -)"
+
+
+PROMPT='%m:%d> '
+RPROMPT='%t'
