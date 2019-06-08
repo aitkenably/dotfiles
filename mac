@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+# Aliases and functions that are MacOS specific
+
+OS=$(uname -s)
+if [[ $OS != 'Darwin' ]]; then
+    return 
+fi
+
+function manp() {
+    man -t "${1:-zsh}" | open -f -a /Applications/Preview.app
+}

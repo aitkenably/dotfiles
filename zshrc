@@ -22,5 +22,8 @@ alias gs='git status'
 alias gc='git commit'
 alias gd='git diff'
 
+# Source OS or machine-specific files 
+source ~/.dotfiles/mac 
+
 # Setup rbenv
 eval "$(rbenv init -)"
