@@ -16,6 +16,7 @@ alias mypath="echo $PATH | tr : '\n'"
 
 # Git
 alias ga='git add'
+alias gaa='git add -A'
 alias gh='git push origin master'
 alias gs='git status'
 alias gc='git commit'
