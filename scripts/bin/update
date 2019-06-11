@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# Update the .dotfiles
+pushd ~/.dotfiles > /dev/null
+
+echo "Updating .dotfiles..."
+git pull 
+
+# Run update script
+~/.dotfiles/update.sh
+
+# Restore environment
+popd > /dev/null 
