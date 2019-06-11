@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-# Mac OSX doesn't have tac                                                      
-tail -rq
