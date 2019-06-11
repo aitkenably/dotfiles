@@ -22,12 +22,22 @@ alias gs='git status'
 alias gc='git commit'
 alias gd='git diff'
 
-# Source OS or machine-specific files 
-source ~/.dotfiles/mac 
-
 # Setup rbenv
 eval "$(rbenv init -)"
 
 
 PROMPT='%m:%d> '
 RPROMPT='%t'
+
+# Detect our OS 
+OS=$(uname -s)
+
+# Mac-specific settings 
+if [[ $OS == 'Darwin' ]]; then
+    
+    function manp() {
+        man -t "${1:-zsh}" | open -f -a /Applications/Preview.app
+    } 
+
+fi
+
