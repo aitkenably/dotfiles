@@ -1,7 +1,7 @@
 
 " set colors
 set background=dark
-colorscheme default
+colorscheme solarized 
 
 " set our leader key to spacebar
 let mapleader = "\<Space>"
