@@ -1,6 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-stow zsh
-stow scripts
-stow git
-stow editor 
+wget -O ~/.bash_aitkenably https://raw.githubusercontent.com/aitkenably/dotfiles/master/bash_aitkenably 
+ 

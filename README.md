@@ -1,9 +1,10 @@
 # dotfiles
-Tame the mess. Assumes you're using zsh. 
+Tame the mess. 
 
 ## Installation
 
 ```
-git clone https://github.com/aitkenably/dotfiles ~/.dotfiles
-~/.dotfiles/install.sh
+wget -O -
+https://raw.githubusercontent.com/aitkenably/dotfiles/master/install.sh | bash
+
 ```
