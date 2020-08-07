@@ -1,8 +1,4 @@
 
-" set colors
-set background=dark
-colorscheme solarized 
-
 " set our leader key to spacebar
 let mapleader = "\<Space>"
 
@@ -31,6 +27,7 @@ set wildmenu
 " incremental search
 set incsearch
 set hlsearch  " highlight matches
+
 " clear search highlighting
 nnoremap <leader><space> :nohlsearch<CR> 
 
@@ -42,7 +39,3 @@ set colorcolumn=+1
 
 " preserve tabs in make files
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-
-" scene settings 
-"autocmd FileType scene set wrap linebreak nolist nonumber
-autocmd FileType scene set nonumber tw=79

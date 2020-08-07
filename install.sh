@@ -6,6 +6,8 @@ echo ""
 echo "Downloading .bash_aitkenably..."
 wget -q -O ~/.bash_aitkenably.sh https://raw.githubusercontent.com/aitkenably/dotfiles/master/bash_aitkenably.sh 
  
+echo "Dowloading .vimrc..."
+wget -q -O ~/.vimrc https://raw.githubusercontent.com/aitkenably/dotfiles/master/vimrc
 
 echo ""
 echo "Now complete your installation"
