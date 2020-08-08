@@ -4,6 +4,7 @@ let mapleader = "\<Space>"
 
 " enable syntax highlighting
 syntax enable
+colorscheme dracula
 
 " use spaces instead of tabs
 set tabstop=4
