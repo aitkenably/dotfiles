@@ -9,9 +9,9 @@ wget -q -O ~/.bash_aitkenably.sh https://raw.githubusercontent.com/aitkenably/do
 echo "Dowloading .vimrc..."
 wget -q -O ~/.vimrc https://raw.githubusercontent.com/aitkenably/dotfiles/master/vimrc
 
-echo "Downloading and installing vim color scheme"
+echo "Downloading vim color scheme..."
 mkdir -p ~/.vim/colors
-wget -q -O https://raw.githubusercontent.com/aitkenably/dotfiles/master/vim/colors/dracula.vim
+wget -q -O ~/.vim/colors/dracula.vim https://raw.githubusercontent.com/aitkenably/dotfiles/master/vim/colors/dracula.vim
 
 echo ""
 echo "Now complete your installation"
