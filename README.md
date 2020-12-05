@@ -6,5 +6,5 @@ Make all the machines consistent.
 Run the install script 
 
 ```
-wget -O - https://raw.githubusercontent.com/aitkenably/dotfiles/master/install.sh | bash
+wget --quiet -O - https://raw.githubusercontent.com/aitkenably/dotfiles/master/install.sh | bash
 ```
