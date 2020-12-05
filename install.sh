@@ -10,15 +10,15 @@ echo "Dowloading .vimrc..."
 wget -q -O ~/.vimrc https://raw.githubusercontent.com/aitkenably/dotfiles/master/vimrc
 
 echo "Downloading vim color scheme..."
-# instructions here: https://draculatheme.com/vim
-mkdir -p ~/.vim/pack/themes/start
-pushd
-cd ~/.vim/pack/themes/start
-git clone https://github.com/dracula/vim.git dracula
-popd
-
-mkdir -p ~/.vim/colors
-wget -q -O ~/.vim/colors/dracula.vim https://raw.githubusercontent.com/aitkenably/dotfiles/master/vim/colors/dracula.vim
+# instructions from here: https://draculatheme.com/vim
+if [ -d "~/.vim/pack/themes/start/dracula" ]; then
+    cd ~/.vim/pack/themes/start/dracula
+    git pull origin master
+elseo
+    mkdir -p ~/.vim/pack/themes/start
+    cd ~/.vim/pack/themes/start
+    git clone https://github.com/dracula/vim.git dracula
+fi
 
 echo ""
 echo "Now complete your installation"
