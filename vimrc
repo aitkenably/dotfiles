@@ -3,6 +3,7 @@
 let mapleader = "\<Space>"
 
 " enable syntax highlighting
+packadd! dracula
 syntax enable
 colorscheme dracula
 
